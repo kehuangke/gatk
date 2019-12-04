@@ -48,6 +48,9 @@ public class HaplotypeCallerReadThreadingAssemblerArgumentCollection extends Rea
         if ( haplotypeHistogramOutput != null ) {
             assemblyEngine.setDebugHistogramOutput(new File(haplotypeHistogramOutput));
         }
+        if ( assemblyRegionOutput != null ) {
+            assemblyEngine.setDebugActiveRegionOut(new File(assemblyRegionOutput));
+        }
 
         return assemblyEngine;
     }
